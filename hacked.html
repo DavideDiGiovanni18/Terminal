@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+<link rel="stylesheet" href="hacked.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Indie+Flower&family=Press+Start+2P&family=Qahiri&display=swap"
+rel="stylesheet">
+    <title>Hacked</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Successfully Hacked User</h1>
+        <h2 id="loading">Loading</h2>
+      <button type="button" name="button" onclick="window.location.href='index.html'">Back</button>
+    </div>
+    <script type="text/javascript">
+    
+      loading();
+      async function loading(){
+        await new Promise(r => setTimeout(r, 1000));
+        setTimeout(loading,10);
+        var test=document.getElementById("loading").innerHTML;
+        if(test.length<10){
+          document.getElementById("loading").innerHTML =test+".";
+        }
+      }
+    </script>
+  </body>
+</html>

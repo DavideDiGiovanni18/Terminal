@@ -1,0 +1,83 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(binxchr.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: black;
+
+}
+
+h1{
+ font-family:'Press Start 2P', cursive;
+ width: 100%;
+ background-color: yellow;;
+ text-align: center;
+ background-color: black;
+ color: green;
+ position: fixed;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ line-height: 3rem;
+}
+
+.wrap{
+  margin-top: 80px;
+}
+
+p{
+  font-family: myFirstFont;
+  word-wrap: break-word;
+  color: green;
+  width: 80%;
+  font-size: 40px;
+  margin: auto;
+}
+
+input{
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 20px;
+  width: 100px;
+  background-color: black;
+  color: green;
+  position: fixed;
+}
+
+@media only screen and (max-width: 500px) {
+  h1{
+    font-family:'Press Start 2P', cursive;
+    width: 100%;
+   background-color: yellow;;
+   text-align: center;
+   background-color: black;
+   color: green;
+   position: fixed;
+   padding-top: 20px;
+   padding-bottom: 10px;
+   line-height: 3rem;
+  }
+
+input{
+  display: none;
+}
+
+.wrap{
+  margin-top: 60px;
+}
+
+p{
+  font-family: myFirstFont;
+  word-wrap: break-word;
+  color: green;
+  width: 80%;
+  font-size: 20px;
+  margin: auto;
+}
+
+}

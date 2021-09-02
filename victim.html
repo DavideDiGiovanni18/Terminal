@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking</title>
+    <style media="screen">
+      body{
+        background-color: black;
+      }
+      h1{
+        text-align:center;
+        margin-top:200px;
+        color:green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hacking <span id="name"></span></h1>
+  </body>
+  <script type="text/javascript">
+document.getElementById("name").innerHTML = name;
+var name1 =document.getElementById("name").innerHTML;
+var count=0;
+setInterval(swichSides,2100);
+    function swichSides() {
+      window.location.href="terminal.html";
+  }
+  loading();
+  async function loading(){
+    await new Promise(r => setTimeout(r, 500));
+    setTimeout(loading,10);
+    if(count<4){
+      document.getElementById("name").innerHTML =name1+".";
+      name1=  document.getElementById("name").innerHTML;
+      count++;
+    }
+  }
+  </script>
+  <script type="text/javascript"src="name.js">
+  </script>
+</html>

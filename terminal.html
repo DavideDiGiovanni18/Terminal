@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="terminal.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Indie+Flower&family=Press+Start+2P&family=Qahiri&display=swap"
+rel="stylesheet">
+    <title>Hacking...</title>
+  </head>
+  <body>
+    <h1>Terminal</h1>
+    <input type="button" name="" value="Back" onclick="window.location.href='index.html'">
+    <br>
+  <div class="wrap">
+      <p id="zahlen"></p>
+  </div>
+
+<script type="text/javascript">
+  var position =0;
+  setInterval(binar,10);
+
+ async function binar(){
+  position+=1;
+   var text =document.getElementById("zahlen").innerHTML;
+
+   if(text.length %390==0){
+     await new Promise(r => setTimeout(r, 1000));
+     setTimeout(binar,10);
+   }
+
+    text+=Math.round((Math.random()*1));
+    document.getElementById("zahlen").innerHTML = text;
+      window.scrollTo(0,position);
+      if(text.length==785){
+
+        window.location.href="hacked.html";
+      }
+  }
+
+
+</script>
+  </body>
+</html>
